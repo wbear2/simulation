@@ -9,16 +9,16 @@ public class RepairRecord {
 	private Production production;
 	private Consumer consumer;
 	private List<Kpd> reasons;
-	private Date time;
+	private int year;
 	
 	public RepairRecord(int id, Production production, Consumer consumer,
-			List<Kpd> reasons, Date time) {
+			List<Kpd> reasons, int year) {
 		super();
 		this.id = id;
 		this.production = production;
 		this.consumer = consumer;
 		this.reasons = reasons;
-		this.time = time;
+		this.year = year;
 	}
 	public int getId() {
 		return id;
@@ -44,10 +44,10 @@ public class RepairRecord {
 	public void setReasons(List<Kpd> reasons) {
 		this.reasons = reasons;
 	}
-	public Date getTime() {
-		return time;
+	public int getYear() {
+		return year;
 	}
-	public void setTime(Date time) {
-		this.time = time;
+	public void setYear(int year) {
+		this.year = year;
 	}
 }
