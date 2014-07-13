@@ -1,24 +1,20 @@
 package simulation;
 
 import java.util.Date;
-import java.util.List;
 
 public class RepairRecord {
 	
 	private int id;
 	private Production production;
 	private Consumer consumer;
-	private List<Kpd> reasons;
-	private int year;
+	private Date time;
 	
-	public RepairRecord(int id, Production production, Consumer consumer,
-			List<Kpd> reasons, int year) {
+	public RepairRecord(int id, Production production, Consumer consumer,Date time) {
 		super();
 		this.id = id;
 		this.production = production;
 		this.consumer = consumer;
-		this.reasons = reasons;
-		this.year = year;
+		this.time = time;
 	}
 	public int getId() {
 		return id;
@@ -38,16 +34,10 @@ public class RepairRecord {
 	public void setConsumer(Consumer consumer) {
 		this.consumer = consumer;
 	}
-	public List<Kpd> getReasons() {
-		return reasons;
+	public Date getTime() {
+		return time;
 	}
-	public void setReasons(List<Kpd> reasons) {
-		this.reasons = reasons;
-	}
-	public int getYear() {
-		return year;
-	}
-	public void setYear(int year) {
-		this.year = year;
+	public void setTime(Date time) {
+		this.time = time;
 	}
 }

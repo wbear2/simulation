@@ -7,14 +7,14 @@ public class Production {
 	private ProductionBatch batch;
 	//rated power, the unit is Watt
 	private int power;
-	private String type;
+	private Consumer consumer;
 	
-	public Production(int id, ProductionBatch batch, int power, String type) {
+	public Production(int id, ProductionBatch batch, int power, Consumer consumer) {
 		super();
 		this.id = id;
 		this.batch = batch;
 		this.power = power;
-		this.type = type;
+		this.consumer = consumer;
 	}
 	public int getId() {
 		return id;
@@ -34,11 +34,11 @@ public class Production {
 	public void setPower(int power) {
 		this.power = power;
 	}
-	public String getType() {
-		return type;
+	public Consumer getConsumer() {
+		return consumer;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setConsumer(Consumer consumer) {
+		this.consumer = consumer;
 	}
 	
 }

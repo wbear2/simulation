@@ -1,20 +1,16 @@
 package simulation;
 
-import java.util.List;
-
 public class Consumer {
 	
 	private int id;
 	private String name;
 	private int age;
-	private List<Production> buys;
 	
-	public Consumer(int id, String name, int age, List<Production> buys) {
+	public Consumer(int id, String name, int age) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
-		this.buys = buys;
 	}
 	public int getId() {
 		return id;
@@ -33,11 +29,5 @@ public class Consumer {
 	}
 	public void setAge(int age) {
 		this.age = age;
-	}
-	public List<Production> getBuys() {
-		return buys;
-	}
-	public void setBuys(List<Production> buys) {
-		this.buys = buys;
 	}
 }

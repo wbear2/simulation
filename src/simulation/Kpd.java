@@ -4,11 +4,13 @@ public class Kpd {
 	
 	private int id;
 	private String name;
+	private RepairRecord repairRecord;
 	
-	public Kpd(int id, String name) {
+	public Kpd(int id, String name, RepairRecord repairRecord) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.repairRecord = repairRecord;
 	}
 	public int getId() {
 		return id;
@@ -21,5 +23,14 @@ public class Kpd {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public RepairRecord getRepairRecord() {
+		return repairRecord;
+	}
+	public void setRepairRecord(RepairRecord repairRecord) {
+		this.repairRecord = repairRecord;
+	}
+	public String toString(){
+		return ""+id;
 	}
 }
