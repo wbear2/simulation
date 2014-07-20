@@ -1,4 +1,4 @@
-package simulation;
+package cn.edu.sjtu.se.dclab.simulation.version1;
 
 
 public class Production {
